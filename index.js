@@ -37,7 +37,7 @@ app.post("/", async (req, res) => {
     try {
         const args = {
             from: config.user,
-            to: req.body.email,
+            to: req.body.email.split("\n"), //array of emails
             subject: req.body.title,
             text: req.body.text,
             html: null,
@@ -53,15 +53,6 @@ app.post("/", async (req, res) => {
     } catch (err) {
         console.error(err);
         return res.redirect("/");
-    }
-});
-
-app.post("/multiple", (req, res) => {
-    for(i = 0; i < emails.length; i++) {
-        const args = {
-            from: config.user,
-            to: req3122
-        }
     }
 });
 
