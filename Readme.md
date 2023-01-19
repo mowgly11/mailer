@@ -1,5 +1,9 @@
 <h1>Send Emails With Node</h1>
 
+<h3>Introduction</h3>
+
+A Mailing tool, uses outlook as a transporter and can be controled via terminal. it can be used in production.
+
 <h3>How to use?</h3>
 
 * Go to `files` folder.
